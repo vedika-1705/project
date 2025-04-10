@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #006270, #008594); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Remember Me & Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: top;
+    gap: 10px;
+    cursor: pointer;
+    color: #444;
+}
+
+.remember-forgot input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.remember-forgot a {
+    color: #320b94;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #557de9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color:#557de9;
+}
+
+/* Signup Link */
+.signup-link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #062a8d;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+    .login-header {
+        font-size: 20px;
+    }
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #006270, #008594);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Signup Container */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Remember Me & Forgot Password */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.remember-me label {
+    display: flex;
+    align-items:top;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    align-items: top;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remember-me a {
+    color: #5A2EC6;
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #557de9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color:#557de9;
+}
+
+/* Login Link */
+p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+p a {
+    color: #5A2EC6;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Different Devices */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

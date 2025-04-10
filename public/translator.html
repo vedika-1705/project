@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Search</title>
+    <link rel="stylesheet" href="translator.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="/audiologo.jpg" alt="Logo">
+        </a>
+        <nav>
+            <ul class="navlist">
+                <li><a href="description.html">Description</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right-content">
+            <a href="homepage.html" class="nav-btn">LogOut</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>    
+    </header>   
+
+    <main>
+        <h1>Welcome to the Translator Page!</h1>
+        <h2>Hello, <span id="logged-in-user">User </span>!</h2>         
+
+        <!-- Search Bar + Button + Speech Recognition Button -->
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Type to search..." />
+            <button id="search-button" class="search-button">Search</button>
+            <button id="start-speech" class="start-speech">Start Speech Recognition</button>
+            <p id="speech-status">Click the button and say a video name to load.</p>
+        </div>
+        <p id="spoken-sentence"></p>
+
+        <!-- Video Container -->
+        <!-- Video Container -->
+<div id="video-container" class="video-container">
+    <p>Video will appear here</p>
+    <video src="https://localhost:3000/assets" autoplay loop muted></video> 
+</div>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="newserver.js"></script>
+    <script>
+        async function fetchCurrentUser () {
+            try {
+                const response = await fetch('/current-user'); // ✅ Get logged-in user
+                if (!response.ok) throw new Error('Failed to fetch user');
+
+                const data = await response.json();
+                document.getElementById("logged-in-user").textContent = data.username; // ✅ Show username
+            } catch (error) {
+                console.error("Error fetching user:", error);
+            }
+        }
+
+        fetchCurrentUser (); // ✅ Fetch user on page load
+    </script>
+</body>
+</html>

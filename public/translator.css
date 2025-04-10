@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#404040;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(174, 137, 87, 0.9);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 15px;
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    background-color: #3a4396; /* Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #e63946; /* Darker Red */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fffefe;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-button, .start-speech {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.start-speech {
+    background-color: #17a2b8; /* Teal */
+    color: white;
+}
+
+.search-button:hover {
+    background-color: #218838; /* Darker Green */
+}
+
+.start-speech:hover {
+    background-color: #138496; /* Darker Teal */
+}
+
+#speech-status {
+    margin-top: 10px;
+    color: #666;
+}
+#spoken-sentence{
+   color: #ccc;
+}
+.video-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #404040;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container p {
+    margin: 0;
+    color: #777;
+}
+
+video {
+    width: 100%;
+    max-width: 700px; /* Limit video width */
+    border-radius: 8px;
+    margin-top: 10px;
+}
